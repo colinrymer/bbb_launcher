@@ -19,7 +19,6 @@
         <td><%= room.name %></td>
         <td><%= room.welcome %></td>
         <td><%= room.recorded %></td>
-        <td><%=l room.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_room_path(room), :class => 'btn btn-mini' %>
