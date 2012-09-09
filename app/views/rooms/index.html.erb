@@ -8,8 +8,6 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:welcome) %></th>
-      <th><%= model_class.human_attribute_name(:moderator_pw) %></th>
-      <th><%= model_class.human_attribute_name(:viewer_pw) %></th>
       <th><%= model_class.human_attribute_name(:recorded) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -20,13 +18,13 @@
         <td><%= link_to room.id, room_path(room) %></td>
         <td><%= room.name %></td>
         <td><%= room.welcome %></td>
-        <td><%= room.moderator_pw %></td>
-        <td><%= room.viewer_pw %></td>
         <td><%= room.recorded %></td>
         <td><%=l room.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_room_path(room), :class => 'btn btn-mini' %>
+          <%= link_to t('.launch', :default => "launch"),
+                      launch_room_path(room), :class => 'btn btn-mini' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       room_path(room),
                       :method => :delete,

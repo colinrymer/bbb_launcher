@@ -1,5 +1,8 @@
 BbbLauncher::Application.routes.draw do
-  resources :rooms
+  
+  resources :rooms do
+    get :launch, :on => :member
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -67,7 +67,7 @@ class RoomsController < ApplicationController
         format.json { render json: @room.errors, status: :unprocessable_entity }
       end
     end
-  end
+  end 
 
   # DELETE /rooms/1
   # DELETE /rooms/1.json
@@ -80,4 +80,26 @@ class RoomsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def launch
+    @room = Room.find(params[:id])
+    #debugger
+    @bbb = BBBApi.new :server => "test-install.blindsidenetworks.com/bigbluebutton/api", :salt => "8cd8ef52e8e101574e400365b55e11a6"
+    begin
+      @bbb.create :name => @room.name, :meetingID =>  @room.name, :welcome => "Welcome to %%CONFNAME%%", :voiceBridge => "71234" do |doc|		
+      @moderatorPW = doc.at_xpath('//moderatorPW').content
+      @attendeePW = doc.at_xpath('//attendeePW').content
+
+      params = { :fullName => "John Doe", :meetingID => @room.name, :password => @moderatorPW }
+      redirect_to( @bbb.join(params))
+    end
+    rescue BBBError => bbb_err
+      puts "  messageKey: " + bbb_err.messageKey
+      puts "  message: " + bbb_err.messageText
+    rescue Exception => e
+      puts "Unable to create meeting"
+      puts e.message  
+    end
+  end
+  	  
 end
