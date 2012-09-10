@@ -1,5 +1,7 @@
 BbbLauncher::Application.routes.draw do
   
+  resources :sessions
+
   resources :rooms do
     get :launch, :on => :member
   end
