@@ -1,0 +1,11 @@
+# Logfile created on 2012-09-09 16:48:11 -0700 by logger.rb/31641
+INFO [2012-09-09 16:48:11] : http://test-install.blindsidenetworks.com/bigbluebutton/api/create?name=asf&meetingID=asf&welcome=Welcome%20to%20%25%25CONFNAME%25%25&voiceBridge=71234&checksum=021b2141f1a771fa03f0da9a7be448e9b8a2767a
+INFO [2012-09-09 16:48:12] : http://test-install.blindsidenetworks.com/bigbluebutton/api/join?fullName=John%20Doe&meetingID=asf&password=ceGV9pOe&checksum=dad9f4f04bcffaf649f9eb627192dffc5adbbe47
+INFO [2012-09-09 17:42:23] : http://test-install.blindsidenetworks.com/bigbluebutton/api/getMeetings?random=6737&checksum=fb0e0ee97b9243a35cb2eb170e2196da297a2e19
+INFO [2012-09-09 17:44:02] : http://test-install.blindsidenetworks.com/bigbluebutton/api/getMeetings?random=3037&checksum=b6e712c50c4e39a9569109f3a06b5e4d9c5aa862
+INFO [2012-09-09 17:44:15] : http://test-install.blindsidenetworks.com/bigbluebutton/api/create?name=asf&meetingID=asf&welcome=Welcome%20to%20%25%25CONFNAME%25%25&voiceBridge=71234&checksum=021b2141f1a771fa03f0da9a7be448e9b8a2767a
+INFO [2012-09-09 17:44:15] : http://test-install.blindsidenetworks.com/bigbluebutton/api/join?fullName=John%20Doe&meetingID=asf&password=flSLtagb&checksum=0a7dc81965a735c4399ff6f9c5f87dc8f8d065f4
+INFO [2012-09-09 17:44:30] : http://test-install.blindsidenetworks.com/bigbluebutton/api/getMeetings?random=3368&checksum=61dd32d840857ad55218bafdcc29a5186b644d5a
+INFO [2012-09-09 17:44:38] : http://test-install.blindsidenetworks.com/bigbluebutton/api/getMeetings?random=5623&checksum=275d3ab9641b4ca1b40cdb78b82b361da4bdff0b
+INFO [2012-09-09 17:44:40] : http://test-install.blindsidenetworks.com/bigbluebutton/api/getMeetings?random=5608&checksum=e2d49a26c8dcecbf38de664aea9462bebe810232
+INFO [2012-09-09 17:44:42] : http://test-install.blindsidenetworks.com/bigbluebutton/api/getMeetings?random=4038&checksum=62e687c99d64899ea7f97438e0c5f7f27311e1bd
